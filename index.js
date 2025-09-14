@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const meterFoot = document.getElementById("meter-foot")
 const literGal = document.getElementById("liter-gal")
 const kiloPound = document.getElementById("kilo-pound")
+const trolleyFootball = document.getElementById("trolley-football")
 const convertButton = document.getElementById("convert-btn")
 
 convertButton.addEventListener("click", function() {
@@ -64,8 +65,11 @@ convertButton.addEventListener("click", function() {
     let galToLiter = Math.round((inputValue / 0.264) * 100) / 100
     let kgToPound = Math.round((inputValue * 2.204) * 100) / 100
     let poundToKg = Math.round((inputValue / 2.204) * 100) / 100
+    let trolleyToFootball = Math.round((inputValue / 9.2) * 100) / 100
+    let footballToTrolley = Math.round((inputValue * 9.2) * 100) / 100
     meterFoot.innerHTML = `${inputValue} meters = ${meterToFoot} feet | ${inputValue} feet = ${footToMeter} meters`
     literGal.innerHTML = `${inputValue} liters = ${literToGal} gallons | ${inputValue} gallons = ${galToLiter} liters`
     kiloPound.innerHTML = `${inputValue} kg = ${kgToPound} lbs | ${inputValue} lbs = ${poundToKg} kg`
+    trolleyFootball.innerHTML = `${inputValue} trolley cars = ${trolleyToFootball} football fields | ${inputValue} football fields = ${footballToTrolley} trolley cars`
 
 })

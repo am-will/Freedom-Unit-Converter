@@ -64,8 +64,8 @@ convertButton.addEventListener("click", function() {
     let galToLiter = Math.round((inputValue / 0.264) * 100) / 100
     let kgToPound = Math.round((inputValue * 2.204) * 100) / 100
     let poundToKg = Math.round((inputValue / 2.204) * 100) / 100
-    meterFoot.innerHTML = `${inputValue} meters = ${meterToFoot} | ${inputValue} feet = ${footToMeter} meters`
-    literGal.innerHTML = `${inputValue} liters = ${literToGal} | ${inputValue} gallons = ${galToLiter} liters`
-    kiloPound.innerHTML = `${inputValue} kg = ${kgToPound} | ${inputValue} lbs = ${poundToKg} kg`
+    meterFoot.innerHTML = `${inputValue} meters = ${meterToFoot} feet | ${inputValue} feet = ${footToMeter} meters`
+    literGal.innerHTML = `${inputValue} liters = ${literToGal} gallons | ${inputValue} gallons = ${galToLiter} liters`
+    kiloPound.innerHTML = `${inputValue} kg = ${kgToPound} lbs | ${inputValue} lbs = ${poundToKg} kg`
 
 })
